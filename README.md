@@ -1,4 +1,5 @@
 # goit-js-hw-06
+<<<<<<< HEAD
 
 <h2>Завдання 1</h2>
 HTML містить список категорій ul#categories.
@@ -222,3 +223,5 @@ function getRandomHexColor() {
 }
 
 Створи функцію destroyBoxes(), яка очищає вміст div#boxes, у такий спосіб видаляючи всі створені елементи.
+=======
+>>>>>>> ef817f2ef02b2bac14af2fd1c9d7717b18e8fd32
