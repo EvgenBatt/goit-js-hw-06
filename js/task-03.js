@@ -20,9 +20,10 @@ gallery.style.flexDirection = "column";
 gallery.style.alignItems = "center";
 
 const imageWidth = "800";
+const liStyle = "style = list-style:none"
 
 const image = images.reduce((acc, currentValue) => {
-  return (acc += `<li style="list-style: none"><img src="${currentValue.url}" alt="${currentValue.alt}" width="${imageWidth}"></li>`);
+  return (acc += `<li ${liStyle}><img src="${currentValue.url}" alt="${currentValue.alt}" width="${imageWidth}"></li>`);
 }, "");
 
 gallery.insertAdjacentHTML("afterbegin", image);
