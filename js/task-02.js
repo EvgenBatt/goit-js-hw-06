@@ -6,3 +6,5 @@ const liIngredients = ingredients
   .map((ingredient) => `<li class="item">${ingredient}</li>`)
   .join("");
 ingredientsList.insertAdjacentHTML("afterbegin", liIngredients);
+
+
