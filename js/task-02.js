@@ -2,9 +2,8 @@ const ingredients = ["Potatoes", "Mushrooms", "Garlic", "Tomatos", "Herbs", "Con
 
 const ingredientsList = document.querySelector("#ingredients");
 
-const liIngredients = ingredients
-  .map((ingredient) => `<li class="item">${ingredient}</li>`)
-  .join("");
+const liIngredients = ingredients.reduce((acc, ingredient) => {
+  return acc += `<li class="item">${ingredient}</li>`;
+}, "");
+
 ingredientsList.insertAdjacentHTML("afterbegin", liIngredients);
-
-
